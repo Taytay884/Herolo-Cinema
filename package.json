@@ -1,25 +1,35 @@
 {
-  "name": "herolo-movies",
+  "name": "Herolo-Cinema",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5",
-    "react-scripts": "2.1.8"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "formik": "^1.5.1",
+    "gh-pages": "^1.2.0",
+    "react": "^16.4.0",
+    "react-bootstrap": "^1.0.0-beta.6",
+    "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4",
+    "react-thunk": "^1.0.0",
+    "redux": "^4.0.0",
+    "redux-form": "^8.1.0",
+    "redux-thunk": "^2.3.0",
+    "remote-redux-devtools": "^0.5.16",
+    "sweetalert2-react": "^0.8.1",
+    "uniqid": "^4.1.1",
+    "yup": "^0.27.0"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }
