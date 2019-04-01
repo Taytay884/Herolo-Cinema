@@ -25,7 +25,6 @@ export function movieReducer(state = initialState, action) {
             }
 
         case 'SAVE_MOVIE':
-            console.log(action.payload,'red')
             return {
                 ...state,
                 movies: action.payload

@@ -38,9 +38,10 @@ class MovieEdit extends Component {
                     <p>The same movie name already exist</p>
                 </div>
             )
-        }
-        else {
+        } else {
             (this.state.movieToEdit) ?
+                // Values is a bad variable name, you can type movieData / movieValues, not just values.
+                // Use CTRL + SHIFT + ALT + L to format your code, it will look much cleaner.
                 this.props.saveMovie({...this.state.movieToEdit, ...values}, this.props.movies)
                 : this.props.saveMovie(values, this.props.movies)
         }

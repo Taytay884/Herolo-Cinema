@@ -46,12 +46,14 @@ export function deleteMovie(id, movies) {
     }
 }
 
-export function saveMovie(values,movies) {
+// variable values is a terrible name.
+export function saveMovie(values, movies) {
+    // I don't understood why it's a promise...
     return (dispatch) => {
-        movieService.saveMovie(values,movies)
+        movieService.saveMovie(values, movies)
             .then((movie) => {
                 dispatch({
-                    type:SAVE_MOVIE,
+                    type: SAVE_MOVIE,
                     payload: movie
                 })
             })

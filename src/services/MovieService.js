@@ -43,15 +43,28 @@ function _updateMovie(movie,movies) {
 }
 
 function _addMovie(movie,movies) {
+    // Good job, uniqId, nice, empty img.
     return new Promise((resolve, reject) => {
         movie.id = uniqid();
         movie.picture = imgNotA;
-        movies.push(movie);
+        /*
+        *
+        * Your mistake is here,  I said, don't use push.
+        * In React you cannot use push, it's the same pointer!
+        * Debugging your code is the most important thing you have to know.
+        * Use CTRL + SHIFT + ALT + L to format your code, please.
+        * The whole code looks good, good job Niti. <3
+        *
+        *
+        * */
+        // movies.push(movie); // <<<< WRONGGGGGG
+        movies = [...movies, movie];
         resolve(movies)
     })
 }
 
 function saveMovie(movie, movies) {
+    // Very good! the only thing is that values changed to movies. 0.o (It's took me time to understood).
     return movie.id ? _updateMovie(movie, movies) : _addMovie(movie, movies)
 }
 

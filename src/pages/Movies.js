@@ -15,16 +15,17 @@ class Movies extends Component {
     state = {
         showModal: false,
         movies: ''
-    }
+    };
 
     componentDidMount() {
         if (!this.props.movies.length)
             this.props.loadMovies()
         
     }
-    componentWillUpdate(){
-        this.setState({...this.state,movies:this.props.movies})
-    }
+    // I don't know wtf, but it's made me an error...
+    // componentWillUpdate(){
+    //     this.setState({...this.state,movies:this.props.movies})
+    // }
 
 
     render() {
